@@ -1,13 +1,174 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>My Site</title>
-  <link rel="stylesheet" href="style.css">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Nicolas J. Smith — Developer</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600&family=JetBrains+Mono:wght@400;500&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="CSS/style.css">
 </head>
 <body>
-  <h1>Hello World</h1>
-  <p>This is my site.</p>
+
+  <div class="desk-glow"></div>
+
+  <header class="site-header">
+    <a href="#top" class="brand">nic<span class="brand-dot">.</span>dev</a>
+    <nav class="site-nav">
+      <a href="#work">Work</a>
+      <a href="#log">Log</a>
+      <a href="#about">About</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <main id="top">
+
+    <!-- HERO -->
+    <section class="hero">
+      <p class="terminal-line">
+        <span class="prompt">nic@portfolio</span><span class="colon">:</span><span class="path">~</span><span class="dollar">$</span>
+        <span class="typed">whoami</span>
+      </p>
+      <h1 class="hero-title">
+        I build things that<br>
+        feel like <em>they belong</em> where they live.
+      </h1>
+      <p class="hero-sub">
+        Hi, I'm Nicolas — a developer who cares as much about the small
+        interactions as the big architecture. This is my corner of the internet.
+      </p>
+      <div class="hero-actions">
+        <a href="#work" class="btn btn-primary">See my work</a>
+        <a href="#contact" class="btn btn-ghost">Say hello</a>
+      </div>
+    </section>
+
+    <!-- WORK -->
+    <section id="work" class="section">
+      <p class="section-eyebrow">// selected work</p>
+      <h2 class="section-title">Things I've shipped</h2>
+
+      <div class="project-grid">
+        <article class="project-card">
+          <div class="project-thumb thumb-a" aria-hidden="true"></div>
+          <div class="project-body">
+            <h3>Project One</h3>
+            <p>A short line describing the problem this solved and who it was for.</p>
+            <div class="tags">
+              <span class="tag">React</span>
+              <span class="tag">Node</span>
+            </div>
+          </div>
+        </article>
+
+        <article class="project-card">
+          <div class="project-thumb thumb-b" aria-hidden="true"></div>
+          <div class="project-body">
+            <h3>Project Two</h3>
+            <p>Another quick line on the goal, the constraints, and the outcome.</p>
+            <div class="tags">
+              <span class="tag">Python</span>
+              <span class="tag">API</span>
+            </div>
+          </div>
+        </article>
+
+        <article class="project-card">
+          <div class="project-thumb thumb-c" aria-hidden="true"></div>
+          <div class="project-body">
+            <h3>Project Three</h3>
+            <p>What you built, why it mattered, and one detail you're proud of.</p>
+            <div class="tags">
+              <span class="tag">HTML/CSS</span>
+              <span class="tag">Design</span>
+            </div>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- COMMIT LOG / EXPERIENCE -->
+    <section id="log" class="section">
+      <p class="section-eyebrow">// commit log</p>
+      <h2 class="section-title">How I got here</h2>
+
+      <ul class="commit-log">
+        <li class="commit">
+          <span class="commit-hash">a1c9e2f</span>
+          <div class="commit-body">
+            <p class="commit-msg">Started learning to code</p>
+            <p class="commit-meta">2023 — First "Hello, World"</p>
+          </div>
+        </li>
+        <li class="commit">
+          <span class="commit-hash">6f0d41b</span>
+          <div class="commit-body">
+            <p class="commit-msg">Landed first internship / role</p>
+            <p class="commit-meta">Company Name — What you worked on</p>
+          </div>
+        </li>
+        <li class="commit">
+          <span class="commit-hash">e88a027</span>
+          <div class="commit-body">
+            <p class="commit-msg">Shipped a project I'm proud of</p>
+            <p class="commit-meta">Brief note on what made it meaningful</p>
+          </div>
+        </li>
+        <li class="commit commit-head">
+          <span class="commit-hash">HEAD</span>
+          <div class="commit-body">
+            <p class="commit-msg">Currently building this portfolio</p>
+            <p class="commit-meta">2026 — still going</p>
+          </div>
+        </li>
+      </ul>
+    </section>
+
+    <!-- ABOUT -->
+    <section id="about" class="section about">
+      <p class="section-eyebrow">// about</p>
+      <h2 class="section-title">A little more about me</h2>
+      <p class="about-text">
+        Swap this in for a couple of real paragraphs — how you got into code,
+        what kind of problems you like solving, what you do outside of a
+        keyboard. Personal details are what make a portfolio feel like a person
+        rather than a résumé.
+      </p>
+      <div class="skills">
+        <span class="skill-pill">JavaScript</span>
+        <span class="skill-pill">Python</span>
+        <span class="skill-pill">HTML &amp; CSS</span>
+        <span class="skill-pill">Git</span>
+        <span class="skill-pill">SQL</span>
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section id="contact" class="section contact">
+      <p class="section-eyebrow">// get in touch</p>
+      <h2 class="section-title">Let's talk</h2>
+      <p class="contact-text">
+        Open to opportunities, collaborations, or just a good conversation
+        about code.
+      </p>
+      <a href="mailto:you@example.com" class="btn btn-primary">you@example.com</a>
+      <div class="social-row">
+        <a href="#">GitHub</a>
+        <a href="#">LinkedIn</a>
+        <a href="#">Twitter</a>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="site-footer">
+    <p>Built by Nicolas · <span id="year"></span></p>
+  </footer>
+
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
 </body>
 </html>
